@@ -17,7 +17,7 @@ def clean_dataframe(df):
     return df
 
 
-def claculate_metrics(df, value_column):
+def calculate_metrics(df, value_column):
     """
         Calculate metrics based on a numeric column
     """
@@ -25,6 +25,6 @@ def claculate_metrics(df, value_column):
         'mean': df[value_column].mean(),  # Mean value calculation
         'median': df[value_column].median(),  # Calculating the median
         'std': df[value_column].std(),  # Calculating data standard deviation
-        'min': df.value_column].min(),
+        'min': df[value_column].min(),
         'max': df[value_column].max()
     }
